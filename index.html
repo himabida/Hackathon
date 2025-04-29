@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor Empower the Future: Build Your AI-Driven Business in 24 Hours</title>
+    <style>
+        :root {
+            --primary: #6e48aa;
+            --secondary: #9d50bb;
+            --accent: #4776E6;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --success: #28a745;
+        }
+        
+•	{
+            Margin: 0;
+            Padding: 0;
+            Box-sizing: border-box;
+            Font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        Body {
+            Background-color: #f5f7fa;
+            Color: #333;
+            Line-height: 1.6;
+        }
+        
+        .container {
+            Max-width: 1200px;
+            Margin: 0 auto;
+            Padding: 0 20px;
+        }
+        
+        Header {
+            Background: linear-gradient(135deg, var(--primary), var(--secondary));
+            Color: white;
+            Padding: 60px 0 80px;
+            Text-align: center;
+            Position: relative;
+            Overflow: hidden;
+        }
+        
+        Header::after {
+            Content: '';
+            Position: absolute;
+            Bottom: -50px;
+            Left: 0;
+            Right: 0;
+            Height: 100px;
+            Background: #f5f7fa;
+            Transform: skewY(-3deg);
+            z-index: 1;
+        }
+        
+        .header-content {
+            Position: relative;
+            z-index: 2;
+        }
+        
+        H1 {
+            Font-size: 3rem;
+            Margin-bottom: 20px;
+            Font-weight: 800;
+        }
+        
+        .tagline {
+            Font-size: 1.5rem;
+            Margin-bottom: 30px;
+            Font-weight: 300;
+        }
+        
+        .cta-button {
+            Display: inline-block;
+            Background-color: var(--accent);
+            Color: white;
+            Padding: 15px 30px;
+            Border-radius: 50px;
+            Text-decoration: none;
+            Font-weight: 600;
+            Font-size: 1.1rem;
+            Transition: all 0.3s ease;
+            Box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            Margin: 10px;
+        }
+        
+        .cta-button:hover {
+            Transform: translateY(-3px);
+            Box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            Background-color: #3a62c4;
+        }
+        
+        .secondary-button {
+            Background-color: transparent;
+            Border: 2px solid white;
+        }
+        
+        .secondary-button:hover {
+            Background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .stats {
+            Display: flex;
+            Justify-content: space-around;
+            Max-width: 800px;
+            Margin: 40px auto 0;
+            Flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            Text-align: center;
+            Padding: 20px;
+            Flex: 1;
+            Min-width: 150px;
+        }
+        
+        .stat-number {
+            Font-size: 2.5rem;
+            Font-weight: 700;
+            Margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            Font-size: 1rem;
+            Opacity: 0.9;
+        }
+        
+        Section {
+            Padding: 80px 0;
+        }
+        
+        H2 {
+            Text-align: center;
+            Font-size: 2.5rem;
+            Margin-bottom: 50px;
+            Color: var(--dark);
+            Position: relative;
+        }
+        
+        H2::after {
+            Content: '';
+            Display: block;
+            Width: 80px;
+            Height: 4px;
+            Background: linear-gradient(to right, var(--primary), var(--secondary));
+            Margin: 15px auto;
+            Border-radius: 2px;
+        }
+        
+        .benefits {
+            Display: flex;
+            Flex-wrap: wrap;
+            Justify-content: center;
+            Gap: 30px;
+            Margin-top: 40px;
+        }
+        
+        .benefit-card {
+            Background: white;
+            Border-radius: 10px;
+            Box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            Padding: 30px;
+            Width: 100%;
+            Max-width: 350px;
+            Transition: transform 0.3s ease, box-shadow 0.3s ease;
+            Position: relative;
+            Overflow: hidden;
+        }
+        
+        .benefit-card:hover {
+            Transform: translateY(-10px);
+            Box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefit-card::before {
+            Content: '';
+            Position: absolute;
+            Top: 0;
+            Left: 0;
+            Width: 5px;
+            Height: 100%;
+            Background: linear-gradient(to bottom, var(--primary), var(--secondary));
+        }
+        
+        .benefit-icon {
+            Font-size: 2.5rem;
+            Color: var(--primary);
+            Margin-bottom: 20px;
+        }
+        
+        .benefit-title {
+            Font-size: 1.5rem;
+            Margin-bottom: 15px;
+            Color: var(--dark);
+        }
+        
+        .sponsorship-tiers {
+            Display: flex;
+            Flex-wrap: wrap;
+            Justify-content: center;
+            Gap: 20px;
+            Margin-top: 40px;
+        }
+        
+        .tier-card {
+            Background: white;
+            Border-radius: 10px;
+            Box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            Padding: 30px;
+            Width: 100%;
+            Max-width: 350px;
+            Transition: all 0.3s ease;
+            Position: relative;
+            Overflow: hidden;
+        }
+        
+        .tier-card:hover {
+            Transform: translateY(-5px);
+            Box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tier-header {
+            Text-align: center;
+            Margin-bottom: 25px;
+            Padding-bottom: 20px;
+            Border-bottom: 1px solid #eee;
+        }
+        
+        .tier-name {
+            Font-size: 1.8rem;
+            Font-weight: 700;
+            Margin-bottom: 10px;
+            Color: var(--dark);
+        }
+        
+        .tier-price {
+            Font-size: 1.5rem;
+            Color: var(--primary);
+            Font-weight: 600;
+        }
+        
+        .tier-features {
+            List-style: none;
+            Margin-bottom: 30px;
+        }
+        
+        .tier-features li {
+            Margin-bottom: 10px;
+            Position: relative;
+            Padding-left: 25px;
+        }
+        
+        .tier-features li::before {
+            Content: '✓';
+            Position: absolute;
+            Left: 0;
+            Color: var(--success);
+            Font-weight: bold;
+        }
+        
+        .tier-features li.unavailable {
+            Color: #999;
+        }
+        
+        .tier-features li.unavailable::before {
+            Content: '✗';
+            Color: #ccc;
+        }
+        
+        .testimonials {
+            Background-color: white;
+            Padding: 80px 0;
+        }
+        
+        .testimonial-slider {
+            Max-width: 800px;
+            Margin: 0 auto;
+            Position: relative;
+        }
+        
+        .testimonial {
+            Background: white;
+            Padding: 30px;
+            Border-radius: 10px;
+            Box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            Text-align: center;
+            Display: none;
+        }
+        
+        .testimonial.active {
+            Display: block;
+            Animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            From { opacity: 0; }
+            To { opacity: 1; }
+        }
+        
+        .testimonial-text {
+            Font-size: 1.2rem;
+            Font-style: italic;
+            Margin-bottom: 20px;
+            Color: #555;
+        }
+        
+        .testimonial-author {
+            Font-weight: 700;
+            Color: var(--dark);
+        }
+        
+        .testimonial-role {
+            Color: #777;
+            Font-size: 0.9rem;
+        }
+        
+        .slider-controls {
+            Display: flex;
+            Justify-content: center;
+            Margin-top: 30px;
+        }
+        
+        .slider-dot {
+            Width: 12px;
+            Height: 12px;
+            Border-radius: 50%;
+            Background-color: #ddd;
+            Margin: 0 5px;
+            Cursor: pointer;
+            Transition: all 0.3s ease;
+        }
+        
+        .slider-dot.active {
+            Background-color: var(--primary);
+            Transform: scale(1.2);
+        }
+        
+        .faq {
+            Background-color: #f8f9fa;
+        }
+        
+        .faq-item {
+            Background: white;
+            Border-radius: 8px;
+            Margin-bottom: 15px;
+            Box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            Overflow: hidden;
+        }
+        
+        .faq-question {
+            Padding: 20px;
+            Font-size: 1.2rem;
+            Font-weight: 600;
+            Color: var(--dark);
+            Cursor: pointer;
+            Display: flex;
+            Justify-content: space-between;
+            Align-items: center;
+        }
+        
+        .faq-answer {
+            Padding: 0 20px;
+            Max-height: 0;
+            Overflow: hidden;
+            Transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            Max-height: 300px;
+            Padding: 0 20px 20px;
+        }
+        
+        .faq-toggle {
+            Font-size: 1.5rem;
+            Transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-toggle {
+            Transform: rotate(45deg);
+        }
+        
+        .contact-form {
+            Max-width: 600px;
+            Margin: 0 auto;
+            Background: white;
+            Padding: 40px;
+            Border-radius: 10px;
+            Box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            Margin-bottom: 20px;
+        }
+        
+        Label {
+            Display: block;
+            Margin-bottom: 8px;
+            Font-weight: 600;
+            Color: var(--dark);
+        }
+        
+        Input, textarea, select {
+            Width: 100%;
+            Padding: 12px 15px;
+            Border: 1px solid #ddd;
+            Border-radius: 5px;
+            Font-size: 1rem;
+            Transition: border-color 0.3s ease;
+        }
+        
+        Input:focus, textarea:focus, select:focus {
+            Border-color: var(--primary);
+            Outline: none;
+        }
+        
+        Textarea {
+            Min-height: 120px;
+            Resize: vertical;
+        }
+        
+        .submit-btn {
+            Background: linear-gradient(to right, var(--primary), var(--secondary));
+            Color: white;
+            Border: none;
+            Padding: 15px 30px;
+            Border-radius: 50px;
+            Font-size: 1.1rem;
+            Font-weight: 600;
+            Cursor: pointer;
+            Transition: all 0.3s ease;
+            Display: block;
+            Width: 100%;
+        }
+        
+        .submit-btn:hover {
+            Transform: translateY(-3px);
+            Box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        Footer {
+            Background: var(--dark);
+            Color: white;
+            Padding: 50px 0 20px;
+            Text-align: center;
+        }
+        
+        .footer-links {
+            Display: flex;
+            Justify-content: center;
+            Flex-wrap: wrap;
+            Margin-bottom: 30px;
+        }
+        
+        .footer-link {
+            Color: #aaa;
+            Margin: 0 15px;
+            Text-decoration: none;
+            Transition: color 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            Color: white;
+        }
+        
+        .social-icons {
+            Margin-bottom: 30px;
+        }
+        
+        .social-icon {
+            Color: white;
+            Font-size: 1.5rem;
+            Margin: 0 10px;
+            Transition: color 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            Color: var(--primary);
+        }
+        
+        .copyright {
+            Color: #777;
+            Font-size: 0.9rem;
+        }
+        
+        /* Animation classes */
+        .animate-on-scroll {
+            Opacity: 0;
+            Transform: translateY(30px);
+            Transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .animate-on-scroll.visible {
+            Opacity: 1;
+            Transform: translateY(0);
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            H1 {
+                Font-size: 2.2rem;
+            }
+            
+            .tagline {
+                Font-size: 1.2rem;
+            }
+            
+            H2 {
+                Font-size: 2rem;
+            }
+            
+            .stats {
+                Flex-direction: column;
+            }
+            
+            .stat-item {
+                Margin-bottom: 20px;
+            }
+            
+            Section {
+                Padding: 50px 0;
+            }
+            
+            .contact-form {
+                Padding: 30px 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Sponsor <span class="highlight">Empower the Future</span></h1>
+            <p class="tagline">Build Your AI-Driven Business in 24 Hours</p>
+            <div>
+                <a href="#contact" class="cta-button">Become a Sponsor</a>
+                <a href="#benefits" class="cta-button secondary-button">Learn More</a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Expected Attendees</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24</div>
+                    <div class="stat-label">Hours of Innovation</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Startups Created</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About the Event</h2>
+            <div class="about-content animate-on-scroll">
+                <p>Empower the Future is a groundbreaking 24-hour event where participants will learn to build AI-driven businesses from scratch. This intensive program brings together students, young professionals, and tech enthusiasts to:</p>
+                <ul style="margin: 20px 0; padding-left: 20px;">
+                    <li>Learn from industry experts about AI and business development</li>
+                    <li>Form teams and develop AI-powered business concepts</li>
+                    <li>Receive mentorship from successful entrepreneurs</li>
+                    <li>Pitch to a panel of investors and industry leaders</li>
+                </ul>
+                <p>As a sponsor, your brand will be at the center of this innovation hub, connecting with the next generation of tech leaders.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>Sponsorship Benefits</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Partnering with us provides exceptional value for your brand. Here's what you'll gain:</p>
+            
+            <div class="benefits">
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="benefit-title">Targeted Brand Exposure</h3>
+                    <p>Reach a highly engaged audience of tech-savvy students, professionals, and entrepreneurs who are passionate about AI and innovation.</p>
+                </div>
+                
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="benefit-title">Talent Acquisition</h3>
+                    <p>Connect with top talent in AI and business development. Many participants go on to successful careers in tech startups and corporations.</p>
+                </div>
+                
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="benefit-title">Networking Opportunities</h3>
+                    <p>Build relationships with other sponsors, mentors, judges, and potential partners in the tech ecosystem.</p>
+                </div>
+                
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="benefit-title">Brand Association</h3>
+                    <p>Align your brand with innovation, education, and the future of AI-driven business solutions.</p>
+                </div>
+                
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3 class="benefit-title">Speaking Opportunities</h3>
+                    <p>Gain a platform to share your expertise and showcase your company's thought leadership in AI.</p>
+                </div>
+                
+                <div class="benefit-card animate-on-scroll">
+                    <div class="benefit-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="benefit-title">Product Showcase</h3>
+                    <p>Demonstrate your AI tools or services to potential users and customers in a hands-on environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tiers">
+        <div class="container">
+            <h2>Sponsorship Tiers</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">We offer flexible sponsorship packages to meet your marketing objectives and budget.</p>
+            
+            <div class="sponsorship-tiers">
+                <div class="tier-card animate-on-scroll">
+                    <div class="tier-header">
+                        <h3 class="tier-name">Platinum Sponsor</h3>
+                        <div class="tier-price">IDR10.000.000</div>
+                    </div>
+                    <ul class="tier-features">
+                        <li>Prime logo placement on all marketing materials</li>
+                        <li>Keynote speaking opportunity</li>
+                        <li>Exclusive branding on event website</li>
+                        <li>Large exhibition booth space</li>
+                        <li>Branding on all participant materials</li>
+                        <li>Recognition in all press releases</li>
+                        <li>VIP seating for company representatives</li>
+                        <li>Exclusive access to participant resumes</li>
+                    </ul>
+                    <a href="#contact" class="cta-button" style="width: 100%; text-align: center;">Inquire Now</a>
+                </div>
+                
+                <div class="tier-card animate-on-scroll">
+                    <div class="tier-header">
+                        <h3 class="tier-name">Gold Sponsor</h3>
+                        <div class="tier-price">IDR5.000.000</div>
+                    </div>
+                    <ul class="tier-features">
+                        <li>Prominent logo placement on marketing materials</li>
+                        <li>Panel speaking opportunity</li>
+                        <li>Featured branding on event website</li>
+                        <li>Standard exhibition booth space</li>
+                        <li>Branding on select participant materials</li>
+                        <li>Mention in press releases</li>
+                        <li>Priority seating for company representatives</li>
+                        <li class="unavailable">Resume access unavailable</li>
+                    </ul>
+                    <a href="#contact" class="cta-button" style="width: 100%; text-align: center;">Inquire Now</a>
+                </div>
+                
+                <div class="tier-card animate-on-scroll">
+                    <div class="tier-header">
+                        <h3 class="tier-name">Silver Sponsor</h3>
+                        <div class="tier-price">IDR1.000.000</div>
+                    </div>
+                    <ul class="tier-features">
+                        <li>Logo on marketing materials</li>
+                        <li>Breakout session opportunity</li>
+                        <li>Logo on event website</li>
+                        <li>Shared exhibition space</li>
+                        <li class="unavailable">No participant material branding</li>
+                        <li class="unavailable">No press release mention</li>
+                        <li>General seating for representatives</li>
+                        <li class="unavailable">Resume access unavailable</li>
+                    </ul>
+                    <a href="#contact" class="cta-button" style="width: 100%; text-align: center;">Inquire Now</a>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 40px;">
+                <a href="#contact" style="color: var(--primary); text-decoration: none; font-weight: 600;">Custom sponsorship packages available →</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Past Sponsors Say</h2>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p class="testimonial-text">"Sponsoring Empower the Future was one of our best marketing decisions last year. We connected with brilliant young minds and hired three exceptional AI developers from the event."</p>
+                    <div class="testimonial-author">Moch. Raffi</div>
+                    <div class="testimonial-role">Manager, TechInnovate</div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"The quality of participants and the energy at this event was incredible. Our product demo booth was busy non-stop with genuinely interested potential customers."</p>
+                    <div class="testimonial-author">Muhamad Aditya</div>
+                    <div class="testimonial-role">Marketing Director, AI Solutions.</div>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"As a startup, we gained valuable exposure and made connections that led to two partnership opportunities. The ROI was exceptional."</p>
+                    <div class="testimonial-author">Yusup Hermawan</div>
+                    <div class="testimonial-role">Founder</div>
+                </div>
+                
+                <div class="slider-controls">
+                    <div class="slider-dot active" data-slide="0"></div>
+                    <div class="slider-dot" data-slide="1"></div>
+                    <div class="slider-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item animate-on-scroll">
+                <div class="faq-question">
+                    What types of companies typically sponsor this event?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We welcome sponsors from across the tech ecosystem, including AI startups, established tech companies, venture capital firms, educational institutions, and service providers targeting the tech industry (legal, accounting, cloud services, etc.).</p>
+                </div>
+            </div>
+            
+            <div class="faq-item animate-on-scroll">
+                <div class="faq-question">
+                    Can we provide our own branded materials for the event?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! We encourage sponsors to provide banners, swag, and other branded materials. We'll work with you to determine optimal placement based on your sponsorship level.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item animate-on-scroll">
+                <div class="faq-question">
+                    How will our sponsorship be recognized digitally?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Depending on your sponsorship level, your logo and link will appear on our event website, email newsletters to 10,000+ subscribers, social media posts (50k+ followers across platforms), and in our mobile app used by all attendees.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item animate-on-scroll">
+                <div class="faq-question">
+                    Can we participate in the event beyond sponsorship?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Many sponsors choose to have representatives serve as mentors, judges, or workshop leaders. This provides even deeper engagement with participants.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item animate-on-scroll">
+                <div class="faq-question">
+                    What is the deadline for sponsorship commitments?
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We accept sponsorships on a rolling basis, but prime placement opportunities are allocated first-come, first-served. We recommend committing at least 6 weeks before the event for maximum visibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Become a Sponsor</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 40px;">Ready to join us in empowering the next generation of AI entrepreneurs? Contact us to discuss sponsorship opportunities.</p>
+            
+            <div class="contact-form animate-on-scroll">
+                <form id="sponsorForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interest">Sponsorship Interest Level</label>
+                        <select id="interest" name="interest">
+                            <option value="">Select an option</option>
+                            <option value="platinum">Platinum (IDR10.000.000)</option>
+                            <option value="gold">Gold (IDR5.000.000)</option>
+                            <option value="silver">Silver (IDR1.000.000)</option>
+                            <option value="custom">Custom Package</option>
+                            <option value="exploring">Just Exploring Options</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Sponsorship Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#about" class="footer-link">About the Event</a>
+                <a href="#benefits" class="footer-link">Sponsor Benefits</a>
+                <a href="#tiers" class="footer-link">Sponsorship Tiers</a>
+                <a href="#faq" class="footer-link">FAQ</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            <p class="copyright">© 2025 by Himpunan Mahasiswa Bisnis Digital || All Right Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Testimonial slider
+        const testimonials = document.querySelectorAll(".testimonial");
+        const dots = document.querySelectorAll(".slider-dot");
+        let currentTestimonial = 0;
+        
+        function showTestimonial(index) {
+            testimonials.forEach(testimonial => testimonial.classList.remove("active"));
+            dots.forEach(dot => dot.classList.remove("active"));
+            
+            testimonials[index].classList.add("active");
+            dots[index].classList.add("active");
+            currentTestimonial = index;
+        }
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                showTestimonial(index);
+            });
+        });
+        
+        // Auto-rotate testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+        
+        // FAQ accordion
+        const faqItems = document.querySelectorAll(".faq-item");
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector(".faq-question");
+            
+            question.addEventListener("click", () => {
+                item.classList.toggle("active");
+            });
+        });
+        
+        // Form submission
+        const sponsorForm = document.getElementById("sponsorForm");
+        
+        sponsorForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to your server
+            // For this example, we'll just show an alert
+            alert("Thank you for your sponsorship inquiry! We will contact you shortly.");
+            sponsorForm.reset();
+        });
+        
+        // Animation on scroll
+        const animateElements = document.querySelectorAll(".animate-on-scroll");
+        
+        function checkScroll() {
+            animateElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add("visible");
+                }
+            });
+        }
+        
+        // Initial check
+        checkScroll();
+        
+        // Check on scroll
+        window.addEventListener("scroll", checkScroll);
+    </script>
+</body>
+</html>
+
